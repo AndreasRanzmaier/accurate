@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+
+<button id="btn-login" onclick="login()">Log in</button>
+<button id="btn-logout" onclick="logout()">Log out</button>
+
+<div id="user"></div>
+
+<script src="js/auth.js"></script>
+<script>
+    user().then((user) => {
+        document.querySelector('#user').append(user.name);
+
+        const img = document.createElement('img');
+        img.src = user.picture;
+        document.querySelector('#user').appendChild(img);
+    }).catch((error) => {
+        console.log(error);
+    });
+</script>
+</body>
+</html>
