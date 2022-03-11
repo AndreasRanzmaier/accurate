@@ -20,6 +20,8 @@
         const img = document.createElement('img');
         img.src = user.picture;
         document.querySelector('#user').appendChild(img);
+
+        console.log(user)
     }).catch((error) => {
         console.log(error);
     });

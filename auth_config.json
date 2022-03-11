@@ -1,4 +1,6 @@
 {
   "domain": "dev-thzobbfr.us.auth0.com",
-  "clientId": "YRndorHak4uP3i4wP4ShgyprifqHQ0Xp"
+  "clientId": "LPDkpycbcQ6jhNuBpk231s73tv5jN7PJ",
+  "audience": "https://www.accurate.com/",
+  "scope": "consent"
 }
